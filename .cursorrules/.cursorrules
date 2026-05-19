@@ -1,3 +1,25 @@
 # .cursorrules — paste this into every Next.js project
 
-Stack: Next.js 14 App Router, TypeScript, Tailwind CSS, shadcn/ui, Supabase Code Style: - Use TypeScript always. Define proper types and interfaces. - Prefer Server Components. Add 'use client' only when required (event handlers, hooks). - Use Server Actions for mutations (forms, data writes) in /actions/ folder. - Use Supabase server client (createServerClient) in server components. - Use Supabase browser client (createBrowserClient) in client components. Structure: - Components go in /components/features/ (your components) or /components/ui/ (shadcn). - Shared types go in /lib/types.ts. - Utility functions go in /lib/utils.ts. - All Supabase queries go in /lib/queries.ts for reuse. Responses: - Always explain what you changed and why. - Flag potential security issues (missing auth checks, exposed secrets). - Suggest error handling if I haven't included it. - Keep components small (under 150 lines). Suggest splitting if larger.
+Stack: Next.js 14 App Router, TypeScript, Tailwind CSS, shadcn/ui, Supabase
+
+Code Style:
+
+- Use TypeScript always. Define proper types and interfaces.
+- Prefer Server Components. Add 'use client' only when required (event handlers, hooks).
+- Use Server Actions for mutations (forms, data writes) in /actions/ folder.
+- Use Supabase server client (createServerClient) in server components.
+- Use Supabase browser client (createBrowserClient) in client components.
+
+Structure:
+
+- Components go in /components/features/ (your components) or /components/ui/ (shadcn).
+- Shared types go in /lib/types.ts.
+- Utility functions go in /lib/utils.ts.
+- All Supabase queries go in /lib/queries.ts for reuse.
+
+Responses:
+
+- Always explain what you changed and why.
+- Flag potential security issues (missing auth checks, exposed secrets).
+- Suggest error handling if I haven't included it.
+- Keep components small (under 150 lines). Suggest splitting if larger.
